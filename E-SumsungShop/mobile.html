@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Samsung e-Store | Mobile Products</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Samsung e-Store</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="shop.html" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                    <a href="mobile.html">Mobile</a>
+                    <a href="watch.html">Watch</a>
+                    <a href="display">Display</a>
+                    <a href="accessory">Accessory</a>
+                    </div>
+                </li>
+                <li>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Search products...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+                <li><a href="login.html">Login / Register</a></li>
+                <!-- Shopping Cart Icon -->
+                <li class="shopping-cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="products-section">
+            <h1>Mobile Products</h1>
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy S24 Ultra">
+                    </a>
+                    <h3>Galaxy S24 Ultra</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour1" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour1" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1928.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy S24 Ultra">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy Z Flip6">
+                    </a>
+                    <h3>Galaxy Z Flip6</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour2" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour2" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1648.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy Z Flip6">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy A55 5G">
+                    </a>
+                    <h3>Galaxy A55 5G</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour3" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour3" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1553.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy A55 5G">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy S23">
+                    </a>
+                    <h3>Galaxy S23</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour4" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour4" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1497.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy S23">Add to Cart</button>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy S23">
+                    </a>
+                    <h3>Galaxy S22</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour4" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour4" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1118.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy S23">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript to handle Add to Cart functionality -->
+    <script src="mobile.js"></script>
+</body>
+</html>
