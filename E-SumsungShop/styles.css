@@ -509,6 +509,123 @@ body {
     background-color: #005B9A;
 }
 
+/* Basic Styles for Cart Section */
+.cart-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.cart-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.cart-table th, .cart-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #5d6d7e;
+    color: #fff;
+}
+
+.cart-table td {
+    vertical-align: middle;
+}
+
+.remove-item {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.cart-summary p {
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: #007BCE;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #005b9c;
+}
+
+/* Checkout Form Section */
+.checkout-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.checkout-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checkout-form label {
+    font-weight: bold;
+}
+
+.checkout-form input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.place-order-btn {
+    background-color: #f15025;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background-color: #c7441c;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #005B9A;

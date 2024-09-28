@@ -1,0 +1,271 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #005B9A;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/* Shopping Cart Button Styles */
+.shopping-cart {
+    margin-left: 20px;
+}
+
+.shopping-cart a {
+    color: white;
+    font-size: 24px;
+}
+
+.shopping-cart a:hover {
+    color: #ffd700; /* Changes color on hover */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #005B9A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0067b1;
+}
+
+
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Product Details Section */
+.product-detail-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.product-detail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.product-options {
+    margin-bottom: 1.5rem;
+}
+
+.color-option, .storage-option {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.color-option:hover, .storage-option:hover {
+    background-color: #ddd;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #ddd;
+}
+
+.quantity-control input {
+    width: 3rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.add-to-cart-btn, .buy-now-btn {
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: #007BCE;
+    color: white;
+}
+
+.buy-now-btn {
+    background-color: #f15025;
+    color: white;
+}
+
+.add-to-cart-btn:hover, .buy-now-btn:hover {
+    opacity: 0.9;
+}
+
+/* Product Description Section */
+.product-description {
+    margin-bottom: 2rem;
+}
+
+.product-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Features Section */
+.features-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.features-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.feature-card {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #005B9A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

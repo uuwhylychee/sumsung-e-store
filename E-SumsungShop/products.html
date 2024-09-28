@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Samsung e-Store | Mobile Products</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Samsung e-Store</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="mobile.html">Mobile</a>
+                        <a href="watch.html">Watch</a>
+                        <a href="display.html">Display</a>
+                        <a href="accessory.html">Accessory</a>
+                    </div>
+                </li>
+                <li>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Search products...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+                <li><a href="login.html">Login / Register</a></li>
+                <!-- Shopping Cart Icon -->
+                <li class="shopping-cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <h2>Filter Products</h2>
+        <div class="filter-options">
+            <!-- Category Filter -->
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="mobile">Mobile</option>
+                <option value="watch">Watch</option>
+                <option value="display">Display</option>
+                <option value="accessory">Accessory</option>
+            </select>
+
+            <!-- Price Filter -->
+            <label for="price-range">Price range: </label>
+            <input type="range" id="price-range" min="0" max="2000" step="50" value="2000">
+            <span id="price-display">$2000</span>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="products-section">
+            <h1>All Products</h1>
+            <div class="product-grid" id="product-list">
+                <!-- Mobile Products -->
+                <div class="product-card" data-category="mobile" data-price="1553">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy A55 5G">
+                    </a>
+                    <h3>Galaxy A55 5G</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour1" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour1" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1553.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy A55 5G">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="mobile" data-price="1497">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy S23">
+                    </a>
+                    <h3>Galaxy S23</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour2" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour2" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1497.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy S23">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="mobile" data-price="1928">
+                    <a href="galaxy-s24-ultra.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy S24 Ultra">
+                    </a>
+                    <h3>Galaxy S24 Ultra</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour3" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour3" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1928.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy S24 Ultra">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="mobile" data-price="1648">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy Z Flip6">
+                    </a>
+                    <h3>Galaxy Z Flip6</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour4" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour4" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1648.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy Z Flip6">Add to Cart</button>
+                </div>
+
+                <!-- Watch Products -->
+                <div class="product-card" data-category="watch" data-price="399">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy Watch 5 Pro">
+                    </a>
+                    <h3>Galaxy Watch 5 Pro</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour5" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour5" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$399.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy Watch 5 Pro">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="watch" data-price="349">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy Watch 4">
+                    </a>
+                    <h3>Galaxy Watch 4</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour6" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour6" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$349.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy Watch 4">Add to Cart</button>
+                </div>
+
+                <!-- Display Products -->
+                <div class="product-card" data-category="display" data-price="1799">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Odyssey G9">
+                    </a>
+                    <h3>Odyssey G9</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour7" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour7" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$1799.00</p>
+                    <button class="add-to-cart-btn" data-product="Odyssey G9">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="display" data-price="399">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Smart Monitor M7">
+                    </a>
+                    <h3>Smart Monitor M7</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour8" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour8" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$399.00</p>
+                    <button class="add-to-cart-btn" data-product="Smart Monitor M7">Add to Cart</button>
+                </div>
+
+                <!-- Accessory Products -->
+                <div class="product-card" data-category="accessory" data-price="199">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Galaxy Buds Pro">
+                    </a>
+                    <h3>Galaxy Buds Pro</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour9" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour9" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$199.00</p>
+                    <button class="add-to-cart-btn" data-product="Galaxy Buds Pro">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="accessory" data-price="119">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Samsung Dex Pad">
+                    </a>
+                    <h3>Samsung Dex Pad</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour10" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour10" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$119.00</p>
+                    <button class="add-to-cart-btn" data-product="Samsung Dex Pad">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="accessory" data-price="79">
+                    <a href="product-details.html">
+                        <img src="https://via.placeholder.com/200x200" alt="Wireless Charger">
+                    </a>
+                    <h3>Wireless Charger</h3>
+                    <p>Colour:
+                        <label><input type="radio" name="colour11" value="Option1" checked> Option 1</label>
+                        <label><input type="radio" name="colour11" value="Option2"> Option 2</label>
+                    </p>
+                    <p>$79.99</p>
+                    <button class="add-to-cart-btn" data-product="Wireless Charger">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript to handle Add to Cart functionality -->
+    <script src="products.js"></script>
+    
+</body>
+</html>

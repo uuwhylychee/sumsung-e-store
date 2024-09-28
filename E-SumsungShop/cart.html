@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Samsung e-Store</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="mobile.html">Mobile</a>
+                        <a href="watch.html">Watch</a>
+                        <a href="display.html">Display</a>
+                        <a href="accessory.html">Accessory</a>
+                    </div>
+                </li>
+                <li>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Search products...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+                <li><a href="login.html">Login / Register</a></li>
+                <li class="shopping-cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <main>
+        <section class="cart-section">
+            <h1>Your Shopping Cart</h1>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Variation</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr data-id="1">
+                        <td>Galaxy S24 Ultra</td>
+                        <td>Silver</td>
+                        <td class="item-price" data-price="1250">$1250</td>
+                        <td>
+                            <input type="number" class="item-qty" value="1" min="1">
+                        </td>
+                        <td><button class="remove-item">✖</button></td>
+                    </tr>
+                    <tr data-id="2">
+                        <td>Galaxy S24 Ultra</td>
+                        <td>Black</td>
+                        <td class="item-price" data-price="1250">$1250</td>
+                        <td>
+                            <input type="number" class="item-qty" value="1" min="1">
+                        </td>
+                        <td><button class="remove-item">✖</button></td>
+                    </tr>
+                    <tr data-id="3">
+                        <td>Galaxy S24 Ultra</td>
+                        <td>Gold</td>
+                        <td class="item-price" data-price="1250">$1250</td>
+                        <td>
+                            <input type="number" class="item-qty" value="1" min="1">
+                        </td>
+                        <td><button class="remove-item">✖</button></td>
+                    </tr>
+                    <tr data-id="4">
+                        <td>Galaxy S24 Ultra</td>
+                        <td>White</td>
+                        <td class="item-price" data-price="1250">$1250</td>
+                        <td>
+                            <input type="number" class="item-qty" value="1" min="1">
+                        </td>
+                        <td><button class="remove-item">✖</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">$5000.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    
+        <!-- Checkout Form Section -->
+        <section class="checkout-section" id="checkout-section" style="display: none;">
+            <h1>Checkout</h1>
+            <form action="submit_order.html" method="post" class="checkout-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="zip">Postal Code:</label>
+                <input type="text" id="zip" name="zip" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </footer>
+
+    <script src="cart-checkout.js"></script>
+</body>
+</html>
